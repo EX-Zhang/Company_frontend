@@ -1,0 +1,32 @@
+
+#main{
+
+    text-align: center;
+    
+}
+
+#Info{
+
+    margin: 0 auto;
+
+}
+
+#EChartDiv{
+
+    height: 500px;
+
+    width: 1500px;
+    
+}
+
+.info{
+
+    width: 200px;
+    
+}
+
+.cell{
+
+    border: solid, black, 1px;
+    
+}

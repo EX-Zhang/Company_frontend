@@ -1,0 +1,18 @@
+
+<div>
+  
+  <div id="TitleDiv"><h1><B>{{title}}</B></h1></div><br>
+
+  <div id="ButtonDiv">
+    <button mat-raised-button (click)="getBySector()">Get By Sector</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-raised-button (click)="getCompanies()">Get Companies</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button mat-raised-button (click)="getByCountry()">Get By Country</button>
+  </div><br>
+
+  <div id="TableDiv" *ngIf="!echart_mode">
+    <ng2-smart-table [settings]="table_setting" [source]="table_data"></ng2-smart-table>
+  </div>
+
+  <div echarts id="ChartDiv" *ngIf="echart_mode" [options]="echart_options" style="height:400px;"></div>
+  
+</div>

@@ -1,0 +1,36 @@
+
+<div id="main">
+
+  <div id="InfoDiv">
+    
+    <table id="Info">
+
+      <tr>
+
+        <th class="info cell">Symbol</th>
+        <th class="cell">Name</th>
+        <th class="info cell">Country</th>
+        <th class="info cell">IPO Year</th>
+        <th class="info cell">Sector</th>
+        <th class="info cell">Last Sale</th>
+        
+      </tr>
+
+      <tr>
+
+        <td>{{CompanyInfo.symbol}}</td>
+        <td>{{CompanyInfo.name}}</td>
+        <td>{{CompanyInfo.country}}</td>
+        <td>{{CompanyInfo.ipo_year}}</td>
+        <td>{{CompanyInfo.sector}}</td>
+        <td>{{CompanyInfo.last_sale}}</td>
+        
+      </tr>
+      
+    </table>
+    
+  </div><br>
+
+  <div echarts [options]="echartsOption" id="EChartDiv"></div>
+
+</div>
