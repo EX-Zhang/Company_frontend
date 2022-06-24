@@ -1,18 +1,26 @@
 
 <div id="main">
 
+  <div id="HeaderDiv">
+    
+    <button mat-flat-button style="float:left;display:inline;" (click)="backToCompanyPage()" color="primary"><B>Back</B></button>
+
+    <h2 style="display:inline;"><B>{{CompanyInfo.name}}</B></h2>
+    
+  </div><br><br>
+
   <div id="InfoDiv">
     
-    <table id="Info">
+    <table id="Info" border="1" cellspacing="0">
 
       <tr>
 
-        <th class="info cell">Symbol</th>
-        <th class="cell">Name</th>
-        <th class="info cell">Country</th>
-        <th class="info cell">IPO Year</th>
-        <th class="info cell">Sector</th>
-        <th class="info cell">Last Sale</th>
+        <th class="info">Symbol</th>
+        <th>Name</th>
+        <th class="info">Country</th>
+        <th class="info">IPO Year</th>
+        <th class="info">Sector</th>
+        <th class="info">Last Sale</th>
         
       </tr>
 

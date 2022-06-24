@@ -5,8 +5,6 @@ import { Title } from '@angular/platform-browser';
 
 import { EChartsOption } from 'echarts';
 
-import { Info } from './info';
-
 @Component({
     selector: 'app-info',
     templateUrl: './info.component.html',
@@ -45,6 +43,12 @@ export class InfoComponent implements OnInit {
             this.get_CompanyInfo(params['Company_ID']);
 
         });
+
+    }
+
+    backToCompanyPage(): void {
+
+        location.href = "/Company/";
 
     }
 

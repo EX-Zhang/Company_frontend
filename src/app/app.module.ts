@@ -11,7 +11,7 @@ import * as echarts from 'echarts';
 import { HttpClientModule } from '@angular/common/http';
 import { CompanyComponent } from './company/company.component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
     declarations: [
